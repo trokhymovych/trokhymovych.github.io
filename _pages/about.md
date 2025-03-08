@@ -23,8 +23,8 @@ I am Mykola Trokhymovych, a PhD candidate at Universitat Pompeu Fabra
 within the [Web Science and Social Computing Research Group](https://www.upf.edu/web/wssc). 
 I am co-advised by [Dr. Diego Saez-Trumper](https://meta.wikimedia.org/wiki/User:Diego_(WMF))
 and [Prof. Ricardo Baeza-Yates](https://users.dcc.uchile.cl/~rbaeza/).
-My academic interests center around data science, with a specific focus on `Fact-checking`, `Generative AI`, and `Computational Social Science`. 
-Also, I actively collaborate with the Wikimedia Research Team to contribute to improving `Wikipedia`.
+My academic interests center around data science, with a specific focus on `NLP`, `Data mining`, `Generative AI`, and `Computational Social Science`. 
+I also actively collaborate with the Wikimedia Research Team to contribute to improving `Wikipedia`.
 
-I have `5+ years` of industry experience as a `Data Scientist/Machine Learning Engineer`, having worked in large outsourcing firms, product companies, and startups. 
-My professional expertise primarily lies in `Information Retrieval`, `Ranking`, `Recommender Systems`, and `NLP`.
+I have `7+ years` of industry experience as a `Data Scientist/Machine Learning Engineer` both taking and providing technical direction.  I have experience working in large outsourcing firms, product companies, and startups. 
+My professional expertise primarily lies in `Information Retrieval`, `Ranking`, `NLP` and `Recommender Systems`.
