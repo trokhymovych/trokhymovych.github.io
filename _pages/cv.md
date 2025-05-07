@@ -5,5 +5,5 @@ title: CV
 description:
 nav: true
 nav_order: 3
-cv_pdf: cv_oct_2024_academ.pdf
+cv_pdf: cv_may_2025_academ.pdf
 ---
