@@ -366,6 +366,38 @@ blockquote {
         }
       }
     }
+
+    a.social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.95rem;
+      padding: 0.35rem 0.85rem;
+      margin: 0.25rem;
+      border: 1px solid var(--global-text-color);
+      border-radius: 2rem;
+      text-decoration: none;
+      transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      i {
+        font-size: 1rem;
+      }
+
+      .social-label {
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+      }
+
+      &:hover {
+        border-color: var(--global-theme-color);
+        color: var(--global-theme-color);
+
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
   }
 
   .contact-note {

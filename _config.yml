@@ -67,7 +67,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 github_username: trokhymovych  # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: trokhymovych  # your Twitter handle
+twitter_username:   # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: trokhymovych  # your LinkedIn user name
 telegram_username: # your Telegram user name
@@ -83,7 +83,7 @@ osf_id: # your OSF ID
 research_gate_profile: # your profile on ResearchGate
 scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
-work_url: https://www.upf.edu/web/wssc/people/-/asset_publisher/4OaslIcG8Dlp/content/trokhymovych-mykola/maximized  # work page URL
+work_url:   # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
@@ -119,7 +119,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Mykola's blog # blog_name will be displayed in your blog page
-blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
+blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
 blog_description:
 permalink: /blog/:year/:title/
 
