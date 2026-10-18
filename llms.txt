@@ -1,0 +1,47 @@
+# Mykola Trokhymovych
+
+> Mykola Trokhymovych is a PhD student at Universitat Pompeu Fabra (Barcelona) and a Google PhD Fellow, working with the Wikimedia Research team. His research is in NLP and computational social science: knowledge integrity on Wikipedia and Wikidata, vandalism detection, fact-checking, and readability, with systems deployed in production at Wikimedia.
+
+Each publication has an HTML page and a Markdown version (append `index.md` to the page URL). Full details of all publications are in https://www.trokhymovych.com/llms-full.txt.
+
+## Publications
+
+- [Adversarial Creation and Detection of AI-Generated Social Bot Content](https://www.trokhymovych.com/publications/adversarial-creation-and-detection-of-ai-generated-social-bot-content-2026/index.md): CIKM’26, 2026. Mykola Trokhymovych, Ricardo Baeza-Yates, Alessandro Flammini, Diego Saez-Trumper, Filippo Menczer.
+- [Multilingual Reference Need Assessment System for Wikipedia](https://www.trokhymovych.com/publications/multilingual-reference-need-assessment-system-for-wikipedia-2026/index.md): WWW’26, 2026. Aitolkyn Baigutanova, Francisco Navas, Pablo Aragón, Mykola Trokhymovych, Muniza Aslam, Ai-Jou Chou, Miriam Redi, Diego Sáez Trumper.
+- [An End-to-End Ukrainian RAG for Local Deployment. Optimized Hybrid Search and Lightweight Generation](https://www.trokhymovych.com/publications/an-end-to-end-ukrainian-rag-for-local-deployment-optimized-2026/index.md): UNLP’26, 2026. Mykola Trokhymovych, Yana Oliinyk, Nazarii Nyzhnyk.
+- [Graph-Linguistic Fusion: Using Language Models for Wikidata Vandalism Detection](https://www.trokhymovych.com/publications/graph-linguistic-fusion-using-language-models-for-wikidata-vandalism-detection-2025/index.md): ACL’25, 2025. Mykola Trokhymovych, Lydia Pintscher, Ricardo Baeza-Yates, Diego Sáez Trumper.
+- [Hidden Persuasion: Detecting Manipulative Narratives on Social Media During the 2022 Russian Invasion of Ukraine](https://www.trokhymovych.com/publications/hidden-persuasion-detecting-manipulative-narratives-on-social-media-2025/index.md): UNLP’25, 2025. Kateryna Akhynko, Oleksandr Kosovan, Mykola Trokhymovych.
+- [Characterizing Knowledge Manipulation in a Russian Wikipedia Fork](https://www.trokhymovych.com/publications/characterizing-knowledge-manipulation-in-a-russian-wikipedia-fork-2025/index.md): ICWSM’25, 2025. Mykola Trokhymovych, Oleksandr Kosovan, Nathan Forrester, Pablo Aragón, Diego Saez-Trumper, Ricardo Baeza-Yates.
+- [An Open Multilingual System for Scoring Readability of Wikipedia](https://www.trokhymovych.com/publications/an-open-multilingual-system-for-scoring-readability-of-wikipedia-2024/index.md): ACL’24, 2024. Mykola Trokhymovych, Indira Sen, Martin Gerlach.
+- [Wikidata Vandalism Detection with Graph-Linguistic Fusion](https://www.trokhymovych.com/publications/wikidata-vandalism-detection-with-graph-linguistic-fusion-2024/index.md): Wiki Workshop, 2024. Mykola Trokhymovych, Diego Saez-Trumper.
+- [Fair Multilingual Vandalism Detection System for Wikipedia](https://www.trokhymovych.com/publications/fair-multilingual-vandalism-detection-system-for-wikipedia-2023/index.md): KDD’23, 2023. Mykola Trokhymovych, Muniza Aslam, Ai-Jou Chou, Ricardo Baeza-Yates, Diego Saez-Trumper.
+- [GeoDD: End-to-End Spatial Data De-duplication System](https://www.trokhymovych.com/publications/geodd-end-to-end-spatial-data-de-duplication-system-2023/index.md): Data Science and Algorithms in Systems, 2023. Mykola Trokhymovych, Oleksandr Kosovan.
+- [WikiFactFind: Semi-automated fact-checking based on Wikipedia](https://www.trokhymovych.com/publications/wikifactfind-semi-automated-fact-checking-based-on-wikipedia-2022/index.md): Wiki Workshop, 2022. Mykola Trokhymovych, Diego Saez-Trumper.
+- [WikiCheck: An End-to-End Open Source Automatic Fact-Checking API Based on Wikipedia](https://www.trokhymovych.com/publications/wikicheck-an-end-to-end-open-source-automatic-fact-checking-2021/index.md): CIKM’21, 2021. Mykola Trokhymovych, Diego Saez-Trumper.
+
+## About
+
+- [Home](https://www.trokhymovych.com/): Mykola Trokhymovych, PhD student at Universitat Pompeu Fabra, Google PhD Fellow. Research in NLP and computational social science: knowledge integrity, vandalism detection, fact-checking, and readability.
+- [CV](https://www.trokhymovych.com/cv/): Curriculum vitae of Mykola Trokhymovych. Last updated May 2025.
+- [Talks](https://www.trokhymovych.com/talks/): Invited talks, guest lectures, and presentations.
+- [Teaching](https://www.trokhymovych.com/teaching/): Sharing knowledge in computer science, data, and AI.
+- [Collaborating](https://www.trokhymovych.com/collaborating/): Research collaborations and thesis supervision
+
+## Blog posts
+
+- [Multilingual Text Readability Scoring](https://medium.com/@trokhymovych/multilingual-text-readability-scoring-da23d9ca8ed1?source=rss-d96aea114f43------2)
+- [Place Deduplication. Solution overview](https://medium.com/@trokhymovych/place-deduplication-solution-overview-afbbfc08f55f?source=rss-d96aea114f43------2)
+
+## Profiles
+
+- https://scholar.google.com/citations?user=RyptuYsAAAAJ
+- https://orcid.org/0000-0001-9932-7094
+- https://www.semanticscholar.org/author/2125378900
+- https://dblp.org/pid/301/8033.html
+- https://openreview.net/profile?id=~Mykola_Trokhymovych1
+- https://github.com/trokhymovych
+- https://www.linkedin.com/in/trokhymovych
+
+## Optional
+
+- [Full publication details](https://www.trokhymovych.com/llms-full.txt): all papers with authors, venues, abstracts, links and BibTeX

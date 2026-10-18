@@ -1,4 +1,32 @@
+# All crawlers, including AI search and training crawlers, are welcome.
+# A summary for AI agents is at https://www.trokhymovych.com/llms.txt
+
 User-agent: *
-Disallow:
+Allow: /
+
+# OpenAI (ChatGPT search, user browsing, training)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+Allow: /
+
+# Anthropic (Claude search, user browsing, training)
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Allow: /
+
+# Google Gemini (grounding and training)
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (used to train many language models)
+User-agent: CCBot
+Allow: /
 
 Sitemap: https://www.trokhymovych.com/sitemap.xml
