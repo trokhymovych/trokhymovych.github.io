@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description:
+description: Peer-reviewed papers with code, data, and slides.
 nav: true
 nav_order: 2
 ---

@@ -26,7 +26,11 @@ bibtex_show={true},
 code={https://github.com/trokhymovych/KI_multilingual_training},
 preview={KDD23-WebBanner-1024x743.jpg},
 slides = {papers_slides/KDD_slides.pdf},
-poster = {papers_posters/kdd_poster.pdf}
+poster = {papers_posters/kdd_poster.pdf},
+keywords = {vandalism detection, Wikipedia, multilingual NLP, content moderation, fairness, language models},
+pdf = {https://arxiv.org/pdf/2306.01650},
+website = {https://wikitech.wikimedia.org/w/index.php?api=lift-wing%2Fv1&title=Special%3ARestSandbox#/:~:text=revisions%20(language%20agnostic)-,POST,lw/inference/v1/models/revertrisk%2Dmultilingual%3Apredict,-Predict%20revert%20risk},
+blog = {https://meta.wikimedia.org/wiki/Machine_learning_models/Production/Multilingual_revert_risk}
 }
 
 @inproceedings{trokhymovych-etal-2024-open,
@@ -54,10 +58,13 @@ poster = {papers_posters/kdd_poster.pdf}
     data={https://zenodo.org/records/11371932},
     code={https://gitlab.wikimedia.org/repos/research/readability-experiments},
     arxiv={2406.01835},
-    website={https://api.wikimedia.org/wiki/Lift_Wing_API/Reference/Get_readability_prediction},
+    website={https://wikitech.wikimedia.org/w/index.php?api=lift-wing%2Fv1&title=Special%3ARestSandbox#/:~:text=Revision%20quality-,POST,Predict%20readability%20of%20a%20Wikipedia%20revision,-POST},
     slides = {papers_slides/acl_slides.pdf},
     poster = {papers_posters/acl_poster.pdf},
-    supp = {https://huggingface.co/trokhymovych/TRank_readability}
+    supp = {https://huggingface.co/trokhymovych/TRank_readability},
+    keywords = {readability, Wikipedia, multilingual NLP, text simplification, text quality},
+    pdf = {https://aclanthology.org/2024.acl-long.342.pdf},
+    blog = {https://meta.wikimedia.org/wiki/Machine_learning_models/Production/Multilingual_readability_model_card}
 }
 
 @inproceedings{10.1145/3459637.3481961,
@@ -76,16 +83,17 @@ abstract = {With the growth of fake news and disinformation, the NLP community h
 booktitle = {Proceedings of the 30th ACM International Conference on Information \& Knowledge Management},
 pages = {4155--4164},
 numpages = {10},
-keywords = {applied research, wikipedia, nlp, nli, fact-checking},
+keywords = {automated fact checking, wikipedia, nlp, nli, fact-checking, fact verification, fact search},
 location = {Virtual Event, Queensland, Australia},
 series = {CIKM '21},
 selected={true},
 arxiv={2109.00835},
 bibtex_show={true},
 preview={cikm2021logo.jpg},
-website={https://nli.wmflabs.org/},
 slides = {papers_slides/CIKM_presentation.pdf},
-poster = {papers_posters/CIKM-POSTER.pdf}
+poster = {papers_posters/CIKM-POSTER.pdf},
+pdf = {https://arxiv.org/pdf/2109.00835},
+blog = {https://meta.wikimedia.org/wiki/Research:Implementing_a_prototype_for_Automatic_Fact_Checking_in_Wikipedia}
 }
 
 @inproceedings{trokhymovych-etal-2025-graph,
@@ -114,7 +122,12 @@ poster = {papers_posters/CIKM-POSTER.pdf}
     arxiv={2505.18136},
     pdf={https://aclanthology.org/2025.acl-industry.21.pdf},
     data={https://zenodo.org/records/15492678},
-    code={https://github.com/trokhymovych/wikidata-vandalism-detection}
+    code={https://github.com/trokhymovych/wikidata-vandalism-detection},
+    keywords = {vandalism detection, Wikidata, knowledge graphs, multilingual NLP, language models, graph-to-text, content moderation},
+    website = {https://wikitech.wikimedia.org/w/index.php?api=lift-wing%2Fv1&title=Special%3ARestSandbox#/Revision%20quality/revertriskWikidataPredict:~:text=Wikipedia%20revision%20(multilingual)-,POST,Predict%20revert%20risk%20for%20a%20Wikidata%20revision,-Predicts%20whether%20a},
+    blog = {https://meta.wikimedia.org/wiki/Machine_learning_models/Production/RevertRisk_Wikidata},
+    slides = {papers_slides/Wikidata_ACL.pdf},
+    poster = {papers_posters/Wikidata_ACL_poster.pdf}
 }
 
 @inproceedings{akhynko-etal-2025-hidden,
@@ -139,7 +152,10 @@ poster = {papers_posters/CIKM-POSTER.pdf}
     bibtex_show={true},
     preview={acl2025.png},
     pdf={https://aclanthology.org/2025.unlp-1.19.pdf},
-    code={https://github.com/akhynkokateryna/manipulative-narrative-detection}
+    code={https://github.com/akhynkokateryna/manipulative-narrative-detection},
+    keywords = {manipulation, propaganda, social media, Telegram, Ukrainian NLP, persuasive speech},
+    arxiv = {2505.24028},
+    data = {https://github.com/unlp-workshop/unlp-2025-shared-task}
 }
 
 @InProceedings{10.1007/978-3-031-21438-7_60,
@@ -161,7 +177,11 @@ bibtex_show={true},
 preview={geodd_img.png},
 html={https://link.springer.com/chapter/10.1007/978-3-031-21438-7_60},
 url={https://link.springer.com/chapter/10.1007/978-3-031-21438-7_60},
-slides = {papers_slides/GeoDD_ End-to-end spatial data de-duplication system.pdf}
+slides = {papers_slides/GeoDD_ End-to-end spatial data de-duplication system.pdf},
+doi = {10.1007/978-3-031-21438-7_60},
+keywords = {data deduplication, geospatial data, entity resolution, NLP, machine learning, social media data},
+pdf = {https://oleksandrkosovan.github.io/pdf/GeoDD.pdf},
+code = {https://github.com/trokhymovych/forsquare-competition}
 }
 
 @InProceedings{trokhymovych2023wikifactfind,
@@ -173,9 +193,11 @@ slides = {papers_slides/GeoDD_ End-to-end spatial data de-duplication system.pdf
   selected={false},
   bibtex_show={true},
   preview={wikiworkshop.png},
-  html={https://wikiworkshop.org/2022/papers/WikiWorkshop2022_paper_21.pdf},
   slides = {papers_slides/WikiWorkshop_22.pdf},
-  poster = {papers_posters/WikiFactFind_poster.pdf}
+  poster = {papers_posters/WikiFactFind_poster.pdf},
+  abstract = {Fact verification has become an essential task, being used in various areas from checking auto-generated content to fighting disinformation in hybrid wars. However, even though there has been relevant advances in creating automatic fact-checking systems, nowadays manual work is crucial to deliver good quality results. The manual fact verification usually consists of information retrieval, and logical reasoning for making the final verdict. In this work we concentrate on the process of searching for the fact proofs, reveal possible problems while searching, and propose a tool that helps increase the speed of fact checking without sacrificing its quality.},
+  keywords = {evidence retrieval, information retrieval, automated fact checking, Wikipedia, fact verification, NLP},
+  pdf = {https://wikiworkshop.org/2022/papers/WikiWorkshop2022_paper_21.pdf}
 }
 
 @InProceedings{trokhymovych2024wikidata,
@@ -184,12 +206,16 @@ slides = {papers_slides/GeoDD_ End-to-end spatial data de-duplication system.pdf
   booktitle = {Wiki Workshop},
   year = {2024},
   url = {https://wikiworkshop.org/2024/paper/wikidata-vandalism-detection-with-graph-linguistic-fusion.pdf},
+  note = {Extended version published at <a href="/publications/graph-linguistic-fusion-using-language-models-for-wikidata-vandalism-detection-2025/">ACL'25</a>. Please cite that version.},
   selected={false},
-  bibtex_show={true},
   preview={wikiworkshop.png},
-  html={https://wikiworkshop.org/2024/paper/wikidata-vandalism-detection-with-graph-linguistic-fusion.pdf},
   slides = {https://www.canva.com/design/DAGGtB3tMG8/uRImNH7cwTY6Iw2qcKRmnw/view?utm_content=DAGGtB3tMG8&utm_campaign=designshare&utm_medium=link&utm_source=editor},
-  supp = {https://youtu.be/fjGNWM_9Y4M?si=ajLrULBi1uVYaSA_}
+  supp = {https://youtu.be/fjGNWM_9Y4M?si=ajLrULBi1uVYaSA_},
+  pdf = {https://wikiworkshop.org/2024/paper/wikidata-vandalism-detection-with-graph-linguistic-fusion.pdf},
+  keywords = {vandalism detection, Wikidata, knowledge graphs, multilingual NLP, language models, graph-to-text, content moderation},
+  code = {https://github.com/trokhymovych/wikidata-vandalism-detection},
+  blog = {https://meta.wikimedia.org/wiki/Machine_learning_models/Production/RevertRisk_Wikidata},
+  website = {https://wikitech.wikimedia.org/w/index.php?api=lift-wing%2Fv1&title=Special%3ARestSandbox#/Revision%20quality/revertriskWikidataPredict:~:text=Wikipedia%20revision%20(multilingual)-,POST,Predict%20revert%20risk%20for%20a%20Wikidata%20revision,-Predicts%20whether%20a}
 }
 
 @inproceedings{10.1145/3774904.3792803,
@@ -207,24 +233,43 @@ slides = {papers_slides/GeoDD_ End-to-end spatial data de-duplication system.pdf
   booktitle = {Proceedings of the ACM Web Conference 2026},
   pages = {8191--8199},
   numpages = {9},
-  keywords = {citations, wikipedia, language models, nlp},
+  keywords = {reference need, citation needed, verifiability, Wikipedia, multilingual NLP, language models, content moderation},
   location = {United Arab Emirates},
   series = {WWW '26},
   selected={false},
   bibtex_show={true},
-  preview={www2026.png}
+  preview={www2026.png},
+  arxiv = {2603.17146},
+  pdf = {https://arxiv.org/pdf/2603.17146},
+  code = {https://gitlab.wikimedia.org/repos/research/reference-quality},
+  data = {https://analytics.wikimedia.org/published/datasets/one-off/reference-need/},
+  blog = {https://meta.wikimedia.org/wiki/Machine_learning_models/Production/Multilingual_reference_need},
+  website = {https://wikitech.wikimedia.org/w/index.php?api=lift-wing%2Fv1&title=Special%3ARestSandbox#/:~:text=a%20Wikipedia%20revision-,POST,Predict%20missing%20references%20in%20a%20Wikipedia%20revision,-POST}
 }
 
-@misc{trokhymovych2026endtoendukrainianraglocal,
+@inproceedings{trokhymovych-etal-2026-end,
+    title = "An End-to-End {U}krainian {RAG} for Local Deployment. Optimized Hybrid Search and Lightweight Generation",
+    author = "Trokhymovych, Mykola  and
+      Oliinyk, Yana  and
+      Nyzhnyk, Nazarii",
+    editor = "Romanyshyn, Mariana",
+    booktitle = "Proceedings of the Fifth {U}krainian Natural Language Processing Conference ({UNLP} 2026)",
+    month = may,
+    year = "2026",
+    address = "Lviv, Ukraine",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.unlp-1.19/",
+    pages = "223--229",
+    ISBN = "979-8-89176-359-3",
+    abstract = "This paper presents a highly efficient Retrieval-Augmented Generation (RAG) system built specifically for Ukrainian document question answering, which achieved 2nd place in the UNLP 2026 Shared Task. Our solution features a custom two-stage search pipeline that retrieves relevant document pages, paired with a specialized Ukrainian language model fine-tuned on synthetic data to generate accurate, grounded answers. Finally, we compress the model for lightweight deployment. Evaluated under strict computational limits, our architecture demonstrates that high-quality, verifiable AI question answering can be achieved locally on resource-constrained hardware without sacrificing accuracy.",
   abbr={UNLP'26},
-  author = {Mykola Trokhymovych and Yana Oliinyk and Nazarii Nyzhnyk},
-  title = {An End-to-End Ukrainian RAG for Local Deployment. Optimized Hybrid Search and Lightweight Generation},
-  year = {2026},
-  eprint = {2604.22095},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.CL},
-  url = {https://arxiv.org/abs/2604.22095},
+  html = {https://aclanthology.org/2026.unlp-1.19/},
+  keywords = {retrieval-augmented generation, RAG, Ukrainian NLP, hybrid search, information retrieval, small language models, local deployment},
   arxiv = {2604.22095},
+  pdf = {https://aclanthology.org/2026.unlp-1.19.pdf},
+  code = {https://github.com/trokhymovych/unlp-2026-shared-task},
+  data = {https://github.com/unlp-workshop/unlp-2026-shared-task},
+  slides = {papers_slides/unlp_26.pdf},
   selected={false},
   bibtex_show={true},
   preview={unlp.png}
@@ -251,4 +296,8 @@ slides = {papers_slides/GeoDD_ End-to-end spatial data de-duplication system.pdf
   pdf={files/RWKFork.pdf},
   data={https://zenodo.org/records/15073728},
   code={https://github.com/trokhymovych/RWFork},
+  keywords = {knowledge manipulation, Wikipedia, Wikipedia forks, Wikipedia clones, Ruwiki, censorship, Russo-Ukrainian war},
+  slides = {papers_slides/RWFork.pdf},
+  poster = {papers_posters/RWFork.pdf},
+  blog = {https://meta.wikimedia.org/wiki/Research:Newsletter/2025/July#Knowledge_manipulation_on_Ruwiki,_the_Russian_Wikipedia_fork}
 }

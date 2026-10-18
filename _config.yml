@@ -8,10 +8,10 @@ middle_name:
 last_name: Trokhymovych
 email: mykola.trokhymovych@upf.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A personal web-page of Mykola Trokhymovych.
+  Mykola Trokhymovych, PhD student at Universitat Pompeu Fabra, Google PhD Fellow. Research in NLP and computational social science: knowledge integrity, vandalism detection, fact-checking, and readability.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
-keywords: # add your own keywords or leave empty
+keywords: Mykola Trokhymovych, Микола Трохимович, NLP, computational social science, Wikipedia, Wikidata, knowledge integrity, vandalism detection, fact-checking, information retrieval, revertrisk
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🌐 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -58,8 +58,8 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://www.trokhymovych.com/assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -73,6 +73,11 @@ linkedin_username: trokhymovych  # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: RyptuYsAAAAJ  # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
+schema_same_as: # profile URLs added to Schema.org "sameAs" only (no social icons shown)
+  - https://orcid.org/0000-0001-9932-7094
+  - https://www.semanticscholar.org/author/2125378900
+  - https://dblp.org/pid/301/8033.html
+  - https://openreview.net/profile?id=~Mykola_Trokhymovych1
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id:  #0000-0001-9932-7094  # your ORCID ID
 medium_username: # your Medium username
@@ -294,7 +299,7 @@ enable_publication_badges:
   dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, data]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric, data, keywords]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit: 3  # leave blank to always show all authors

@@ -48,6 +48,82 @@
     {%- endunless -%}
 {%- endif -%}
 
+{%- if page.paper %}
+    {%- assign p = page.paper %}
+    {%- assign paper_url = page.url | prepend: site.baseurl | prepend: site.url %}
+    <!-- Google Scholar (Highwire Press) tags, see _plugins/paper-pages.rb -->
+    <meta name="citation_title" content="{{ p.title | escape }}" />
+    {%- for author in p.authors %}
+    <meta name="citation_author" content="{{ author.citation | escape }}" />
+    {%- endfor %}
+    {%- if p.date %}
+    <meta name="citation_publication_date" content="{{ p.date }}" />
+    {%- endif %}
+    {%- if p.venue %}
+    {%- if p.type == "article" %}
+    <meta name="citation_journal_title" content="{{ p.venue | escape }}" />
+    {%- else %}
+    <meta name="citation_conference_title" content="{{ p.venue | escape }}" />
+    {%- endif %}
+    {%- endif %}
+    {%- if p.volume %}<meta name="citation_volume" content="{{ p.volume }}" />{% endif %}
+    {%- if p.issue %}<meta name="citation_issue" content="{{ p.issue }}" />{% endif %}
+    {%- if p.first_page %}<meta name="citation_firstpage" content="{{ p.first_page }}" />{% endif %}
+    {%- if p.last_page %}<meta name="citation_lastpage" content="{{ p.last_page }}" />{% endif %}
+    {%- if p.publisher %}<meta name="citation_publisher" content="{{ p.publisher | escape }}" />{% endif %}
+    {%- if p.isbn %}<meta name="citation_isbn" content="{{ p.isbn }}" />{% endif %}
+    {%- if p.doi %}<meta name="citation_doi" content="{{ p.doi }}" />{% endif %}
+    {%- if p.arxiv %}<meta name="citation_arxiv_id" content="{{ p.arxiv }}" />{% endif %}
+    {%- if p.pdf %}<meta name="citation_pdf_url" content="{{ p.pdf }}" />{% endif %}
+    {%- if p.keywords %}<meta name="citation_keywords" content="{{ p.keywords | escape }}" />{% endif %}
+    <meta name="citation_abstract_html_url" content="{{ paper_url }}" />
+
+    <!-- Schema.org ScholarlyArticle -->
+    {%- assign same_as = "" | split: "" %}
+    {%- if p.doi %}{% assign doi_url = "https://doi.org/" | append: p.doi %}{% assign same_as = same_as | push: doi_url %}{% endif %}
+    {%- if p.arxiv %}{% assign arxiv_url = "https://arxiv.org/abs/" | append: p.arxiv %}{% assign same_as = same_as | push: arxiv_url %}{% endif %}
+    {%- if p.html %}{% assign same_as = same_as | push: p.html %}{% endif %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": {{ p.title | jsonify }},
+        "name": {{ p.title | jsonify }},
+        "url": {{ paper_url | jsonify }},
+        "author": [
+            {%- for author in p.authors %}
+            {"@type": "Person", "name": {{ author.full | jsonify }}{% if author.is_self %}, "url": {{ site.url | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}
+            {%- endfor %}
+        ],
+        {%- if p.year %}
+        "datePublished": {{ p.year | jsonify }},
+        {%- endif %}
+        {%- if p.abstract %}
+        "abstract": {{ p.abstract | jsonify }},
+        {%- endif %}
+        {%- if p.keywords %}
+        "keywords": {{ p.keywords | jsonify }},
+        {%- endif %}
+        {%- if p.venue %}
+        "isPartOf": {"@type": "PublicationIssue", "name": {{ p.venue | jsonify }}},
+        {%- endif %}
+        {%- if p.publisher %}
+        "publisher": {"@type": "Organization", "name": {{ p.publisher | jsonify }}},
+        {%- endif %}
+        {%- if p.doi %}
+        "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ p.doi | jsonify }}},
+        {%- endif %}
+        {%- if p.pdf %}
+        "encoding": {"@type": "MediaObject", "encodingFormat": "application/pdf", "contentUrl": {{ p.pdf | jsonify }}},
+        {%- endif %}
+        {%- if p.preview %}
+        "image": {{ p.preview | jsonify }},
+        {%- endif %}
+        "sameAs": {{ same_as | jsonify }}
+    }
+    </script>
+{%- endif %}
+
 {%- if site.serve_og_meta %}
     <!-- OpenGraph -->
     <meta property="og:site_name" content="{{ title }}" />
@@ -214,9 +290,9 @@
         {%- capture link -%}https://www.zotero.org/{{ site.zotero_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
-    {%- if sameaslinks != blank -%}
-        {%- assign sameaslinks = sameaslinks | split: "" -%}
-    {%- endif -%}
+    {%- for link in site.schema_same_as -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endfor -%}
 
     <script type="application/ld+json">
     {
@@ -227,10 +303,10 @@
         },
         "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
         "@type": "{%- if is_blog_post -%}BlogPosting{%- else -%}WebSite{%- endif -%}",
-        "description": "{%- if page.description -%}{{ page.description }}{%- else if site.description -%}{{ site.description }}{%- endif -%}",
-        "headline": "{%- if page.title -%}{{ page.title }}{%- else -%}{{ site.title }}{%- endif -%}",
+        "description": {{ page.description | default: site.description | strip | jsonify }},
+        "headline": {{ page.title | default: site.title | strip | jsonify }},
         {% if sameaslinks != blank -%}
-        "sameAs": {{ sameaslinks }},
+        "sameAs": {{ sameaslinks | jsonify }},
         {%- endif %}
         "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
         "@context": "https://schema.org"
