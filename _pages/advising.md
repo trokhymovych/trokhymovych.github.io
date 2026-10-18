@@ -48,20 +48,28 @@ Feel free to reach out at [mykola.trokhymovych@upf.edu](mailto:mykola.trokhymovy
   </thead>
   <tbody>
     <tr>
-      <td>2022</td>
-      <td>Anna Botsula</td>
-      <td>—</td>
-      <td><span class="badge bg-secondary">BSc</span></td>
-      <td>🇺🇦 Ukrainian Catholic University</td>
-      <td>Analysis of Knowledge Graphs Usage for Applied Recommender System Solutions</td>
+      <td>2026</td>
+      <td>Tim Fischer</td>
+      <td>Veronika Solopova</td>
+      <td><span class="badge bg-primary">MSc</span></td>
+      <td>🇩🇪 Technische Universität Berlin</td>
+      <td>Detecting and Comparing Narrative Framing in Multilingual Wikipedia</td>
     </tr>
     <tr>
-      <td>2025</td>
-      <td>Viktoriia Makovska</td>
-      <td>Diego Sáez Trumper</td>
+      <td>2026</td>
+      <td>Ingunn Augdal Fløvig</td>
+      <td>Veronika Solopova</td>
       <td><span class="badge bg-primary">MSc</span></td>
-      <td>🇺🇦 Ukrainian Catholic University</td>
-      <td>Vandalism or Knowledge Manipulation? Detecting Narratives in Wikipedia Edits</td>
+      <td>🇩🇪 Technische Universität Berlin</td>
+      <td>Tracing Information Flow between Social Media and Wikipedia</td>
+    </tr>
+    <tr>
+      <td>2026</td>
+      <td>Noah Kamangar</td>
+      <td>Veronika Solopova, Max Upravitelev</td>
+      <td><span class="badge bg-primary">MSc</span></td>
+      <td>🇩🇪 Technische Universität Berlin</td>
+      <td>Detection of Narrative Origins and Editorial Conflict in Wikipedia</td>
     </tr>
     <tr>
       <td>2026</td>
@@ -78,6 +86,22 @@ Feel free to reach out at [mykola.trokhymovych@upf.edu](mailto:mykola.trokhymovy
       <td><span class="badge bg-secondary">BSc</span></td>
       <td>🇺🇦 Ukrainian Catholic University</td>
       <td>Towards Iterative Readability-Controlled Text Simplification</td>
+    </tr>
+    <tr>
+      <td>2025</td>
+      <td>Viktoriia Makovska</td>
+      <td>Diego Sáez Trumper</td>
+      <td><span class="badge bg-primary">MSc</span></td>
+      <td>🇺🇦 Ukrainian Catholic University</td>
+      <td>Vandalism or Knowledge Manipulation? Detecting Narratives in Wikipedia Edits</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>Anna Botsula</td>
+      <td>—</td>
+      <td><span class="badge bg-secondary">BSc</span></td>
+      <td>🇺🇦 Ukrainian Catholic University</td>
+      <td>Analysis of Knowledge Graphs Usage for Applied Recommender System Solutions</td>
     </tr>
   </tbody>
 </table>
