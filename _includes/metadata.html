@@ -51,6 +51,7 @@
 {%- if page.paper %}
     {%- assign p = page.paper %}
     {%- assign paper_url = page.url | prepend: site.baseurl | prepend: site.url %}
+    <link rel="alternate" type="text/markdown" href="{{ paper_url }}index.md" />
     <!-- Google Scholar (Highwire Press) tags, see _plugins/paper-pages.rb -->
     <meta name="citation_title" content="{{ p.title | escape }}" />
     {%- for author in p.authors %}
