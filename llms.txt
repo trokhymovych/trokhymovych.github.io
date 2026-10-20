@@ -29,6 +29,7 @@ Each publication has an HTML page and a Markdown version (append `index.md` to t
 
 ## Blog posts
 
+- [Detecting AI-Generated Text and LLM Bots on Telegram](https://www.trokhymovych.com/blog/2026/ai-bot-detection-telegram/)
 - [Multilingual Text Readability Scoring](https://medium.com/@trokhymovych/multilingual-text-readability-scoring-da23d9ca8ed1?source=rss-d96aea114f43------2)
 - [Place Deduplication. Solution overview](https://medium.com/@trokhymovych/place-deduplication-solution-overview-afbbfc08f55f?source=rss-d96aea114f43------2)
 

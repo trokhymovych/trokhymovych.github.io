@@ -13,6 +13,7 @@ The convergence of large language models and social bots allows malicious actors
 
 - arXiv: https://arxiv.org/abs/2606.07219
 - PDF: https://arxiv.org/pdf/2606.07219
+- Blog: https://www.trokhymovych.com/blog/2026/ai-bot-detection-telegram/
 - Code: https://github.com/trokhymovych/ai-bot-detection
 
 ## Citation
