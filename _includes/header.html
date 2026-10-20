@@ -51,7 +51,8 @@
                   {%- endif -%}
                 </a>
               </li>
-              {% if site.blog_nav_title %}
+              {%- comment -%} Blog is placed among the pages by site.blog_nav_order (after About if unset) {%- endcomment -%}
+              {%- capture blog_item -%}
               <!-- Blog -->
               <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
                 <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
@@ -60,12 +61,24 @@
                   {%- endif -%}
                 </a>
               </li>
+              {%- endcapture -%}
+              {%- assign blog_pending = false -%}
+              {%- if site.blog_nav_title -%}
+                {%- if site.blog_nav_order -%}
+                  {%- assign blog_pending = true -%}
+                {%- else %}
+              {{ blog_item }}
+                {%- endif -%}
               {%- endif %}
 
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
+              {%- if blog_pending and p.nav_order > site.blog_nav_order %}
+              {{ blog_item }}
+              {%- assign blog_pending = false -%}
+              {%- endif -%}
               {%- if p.dropdown %}
               <li class="nav-item dropdown {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ p.title }}
@@ -94,6 +107,9 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+              {%- if blog_pending %}
+              {{ blog_item }}
+              {%- endif -%}
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->

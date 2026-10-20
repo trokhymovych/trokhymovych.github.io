@@ -71,7 +71,7 @@ pagination:
                     <p class="card-text">{{ post.description }}</p>
 
                     {% if post.external_source == blank %}
-                      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+                      {% assign read_time = post.content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
                     {% else %}
                       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
                     {% endif %}
@@ -98,7 +98,7 @@ pagination:
     {% for post in paginator.posts %}
 
     {% if post.external_source == blank %}
-      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+      {% assign read_time = post.content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% else %}
       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% endif %}
@@ -154,7 +154,7 @@ pagination:
 {%- if post.thumbnail -%}
     </div>
   <div class="col-sm-3">
-    <img class="card-img" src="{{post.thumbnail | relative_url}}" style="cursor: pointer; object-fit: cover; height: 100%" alt="image" onclick="window.location.href = '{{ post.redirect }}';">
+    <img class="card-img" src="{{post.thumbnail | relative_url}}" style="cursor: pointer; object-fit: cover; width: 100%; aspect-ratio: 3 / 2;" alt="{{ post.title | escape }}" onclick="window.location.href = '{% if post.redirect == blank %}{{ post.url | relative_url }}{% else %}{{ post.redirect }}{% endif %}';">
   </div>
 </div>
 {%- endif -%}
