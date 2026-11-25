@@ -9,6 +9,33 @@ nav_order: 4
 
 <div class="row mt-3">
 
+  <!-- ─── October 2026 · Wikimedia Polska & Wikimedia Ukraine ── -->
+  <div class="col-md-6 mb-4 d-flex">
+    <div class="card shadow-sm w-100">
+      <div class="card-body p-3 d-flex flex-column">
+        <h5 class="mt-0 mb-1">Vandalism Detection Systems for Wikipedia and Wikidata</h5>
+        <p class="mb-1 text-muted small">
+          <i class="fas fa-university mr-1"></i> Wikimedia Polska &amp; Wikimedia Ukraine &nbsp;&middot;&nbsp;
+          <i class="far fa-calendar-alt mr-1"></i> October 2026
+        </p>
+        <p class="mb-0">
+          <span style="font-size:0.68rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:20px;border:1.5px solid currentColor;opacity:0.45;">English</span>
+          <span style="font-size:0.68rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:20px;border:1.5px solid currentColor;opacity:0.45;">Ukrainian🇺🇦</span>
+          <span style="font-size:0.68rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:20px;border:1.5px solid currentColor;opacity:0.45;">Polish🇵🇱</span>
+        </p>
+        <div class="mt-auto pt-3">
+          <div class="mb-2">
+            <a href="https://meta.wikimedia.org/wiki/Open_Knowledge:_Wikimedia_%26_Research_in_the_CEE_Region" target="_blank" class="btn btn-sm z-depth-0 mr-1" role="button">Event Page &nbsp;<i class="fas fa-external-link-alt"></i></a>
+            <a href="/assets/pdf/talks_slides/Vandalism%20Detection%20Systems%20for%20Wikipedia%20and%20Wikidata____.pdf" target="_blank" class="btn btn-sm z-depth-0" role="button">Slides &nbsp;<i class="fas fa-file-pdf"></i></a>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kqxj3veuTIk" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ─── March 2026 · Wikimedia Ukraine ─────────────────────── -->
   <div class="col-md-6 mb-4 d-flex">
     <div class="card shadow-sm w-100">
