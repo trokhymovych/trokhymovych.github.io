@@ -22,7 +22,7 @@ Each publication has an HTML page and a Markdown version (append `index.md` to t
 ## About
 
 - [Home](https://www.trokhymovych.com/): Mykola Trokhymovych, PhD student at Universitat Pompeu Fabra, Google PhD Fellow. Research in NLP and computational social science: knowledge integrity, vandalism detection, fact-checking, and readability.
-- [CV](https://www.trokhymovych.com/cv/): Curriculum vitae of Mykola Trokhymovych. Last updated May 2025.
+- [CV](https://www.trokhymovych.com/cv/): Curriculum vitae of Mykola Trokhymovych. Last updated October 2026.
 - [Talks](https://www.trokhymovych.com/talks/): Invited talks, guest lectures, and presentations.
 - [Teaching](https://www.trokhymovych.com/teaching/): Sharing knowledge in computer science, data, and AI.
 - [Collaborating](https://www.trokhymovych.com/collaborating/): Research collaborations and thesis supervision
